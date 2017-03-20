@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<layout onLaunch="launch" onVolumeUp="volume_up" onVolumeDown="volume_down" onResume="play" onPause="pause" color="#35ADFF">
+<tabs>
+  <tab text="Player">
+    <row>
+		<label id="info" text="Pot Player" textAlign="center" />
+    </row>
+    <row>
+		<button icon="vdown" onTap="volume_down" />
+		<button icon="vmute" onTap="volume_mute" />
+		<button icon="vup" onTap="volume_up" />
+    </row>
+    <row>
+		<button text="- 5s" ontap="small_back" />
+		<button icon="playpause" onTap="play_pause" />
+		<button text="+ 5s" ontap="small_forward"/>
+    </row>
+    <row>
+		<button text="- 30s" ontap="big_back" />
+		<button icon="fullscreen" ontap="fullscreen" />
+		<button text="+ 30s" ontap="big_forward" />
+    </row>
+	<row>
+		<button icon="previous" onTap="previous" />
+		<button icon="next" onTap="next" />
+	</row>
+  </tab>
+  <tab text="Menus">
+    <row>
+		<button icon="docclose" ontap="button_escape" />
+    </row>
+    <row>
+		<button text="Audio Stream" ontap="audio_toggle" />
+		<button icon="up" ontap="button_up" />
+		<button text="Subs Stream" ontap="subs_toggle" />
+    </row>
+    <row>
+		<button icon="left" ontap="button_left" />
+		<button icon="select" ontap="button_enter" />
+		<button icon="right" ontap="button_right" />
+    </row>
+    <row>
+		<button text="Open File" ontap="open_file" />
+		<button icon="down" ontap="button_down" />
+		<button text="Open Folder" ontap="open_folder" />
+    </row>
+    <row>
+		<button text="Settings" ontap="settings" />
+		<button text="OSD" ontap="osd_toggle" />
+		<button text="Options" ontap="options" />
+    </row>
+  </tab>
+  <tab text="Video">
+	<row>
+		<button icon="docclose" ontap="video_move_zoom_reset" />
+    </row>
+    <row>
+		<button text="- Height" ontap="video_height_decrease" />
+		<button icon="up" ontap="video_move_up" />
+		<button text="+ Height" ontap="video_height_increase" />
+    </row>
+    <row>
+		<button icon="left" ontap="video_move_left" />
+		<button icon="select" ontap="video_move_center" />
+		<button icon="right" ontap="video_move_right" />
+    </row>
+    <row>
+		<button text="- Width" ontap="video_width_decrease" />
+		<button icon="down" ontap="video_move_down" />
+		<button text="+ Width" ontap="video_width_increase" />
+    </row>
+    <row>
+		<button text="- Zoom" ontap="video_zoom_out" />
+		<button text="Aspect Ratio" ontap="aspect_ratio_switch" />
+		<button text="+ Zoom" ontap="video_zoom_in" />
+    </row>
+  </tab>
+  <tab text="Subs">
+    <row>
+		<button icon="docclose" ontap="subs_on_off" />
+    </row>
+    <row>
+		<button text="- Time" ontap="subs_slower" />
+		<button icon="up" ontap="subs_up" />
+		<button text="+ Time" ontap="subs_faster" />
+    </row>
+    <row>
+		<button icon="left" ontap="subs_left" />
+		<button icon="select" ontap="subs_center" />
+		<button icon="right" ontap="subs_right" />
+    </row>
+    <row>
+		<button text="- Text Size" ontap="subs_decrease_text" />
+		<button icon="down" ontap="subs_down" />
+		<button text="+ Text Size" ontap="subs_increase_text" />
+    </row>
+    <row>
+		<button text="- Width" ontap="subs_decrease_width" />
+		<button text="+ Width" ontap="subs_increase_width" />
+		<button text="- Height" ontap="subs_decrease_height" />
+		<button text="- Height" ontap="subs_increase_height" />
+    </row>
+  </tab>
+</tabs>
+</layout>
